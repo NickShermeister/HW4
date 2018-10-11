@@ -94,7 +94,7 @@ output reg		RegWrite,
 output reg		Clk
 );
 integer i;
-integer verbosity=1;
+integer verbosity=0;
   // Initialize register driver signals
   initial begin
     WriteData=32'd0;
@@ -220,7 +220,7 @@ end
 
 
 
-  if(dutpassed == 1) begin
+  if(dutpassed == 1 && verbosity == 1) begin
     $display("Congrats! You have a \"perfect register file.\"");
   end
 
