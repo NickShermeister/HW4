@@ -94,7 +94,7 @@ output reg		RegWrite,
 output reg		Clk
 );
 integer i;
-integer verbosity=0;
+integer verbosity=1;
   // Initialize register driver signals
   initial begin
     WriteData=32'd0;
